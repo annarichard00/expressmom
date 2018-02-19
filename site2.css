@@ -1,0 +1,85 @@
+
+.xm-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #C65860;
+    font-family:'Fira Sans', sans-serif !important;
+
+}
+
+.xm-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2EFD2;
+    margin: 1em;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: #D8CCA2;
+    border-style: solid;
+    color: #673135;
+}
+
+.xm-content h3.ui.header {
+    font-family: 'Fira Sans', Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-weight: 300;
+}
+.xm-content > p {
+    padding: 1em;
+}
+
+@media (min-width: 768px) {
+    .xm-container {
+        display: grid;
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    nav > div {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+header {
+    grid-column: span 3;
+    padding: .25em;
+    text-align: center;
+    font-size: 1.4em;
+    background-color: #F2EFD2;
+    color: #AB4F75;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+nav {
+    background-color: #F2EFD2;
+    padding: 20px;
+
+    border-bottom-width: 5px;
+    border-bottom-color: #D8CCA2;
+    border-bottom-style: solid;
+}
+
+aside {
+    padding: 20px;
+    background-color: #936;
+}
+
+footer {
+    grid-column: span 3;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.4em;
+    background-color: #690;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 1em;
+    font-size: 1.3em;
+    font-weight: bold;
+}
