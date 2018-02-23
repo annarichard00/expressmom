@@ -4,7 +4,7 @@
     flex-direction: column;
     min-height: 100vh;
     background-color: #C65860;
-    font-family:'Fira Sans', sans-serif !important;
+    font-family: 'Fira Sans', sans-serif !important;
 
 }
 
@@ -21,11 +21,13 @@
 }
 
 .xm-content h3.ui.header {
-    font-family: 'Fira Sans', Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-family: 'Fira Sans', Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
     font-weight: 300;
 }
+
 .xm-content > p {
-    padding: 1em;
+    padding: 0.75em;
+    margin: 0;
 }
 
 @media (min-width: 768px) {
@@ -48,6 +50,7 @@ header {
     font-size: 1.4em;
     background-color: #F2EFD2;
     color: #AB4F75;
+    padding-bottom: 0;
 }
 
 main {
@@ -57,8 +60,7 @@ main {
 
 nav {
     background-color: #F2EFD2;
-    padding: 20px;
-
+    padding: 0px;
     border-bottom-width: 5px;
     border-bottom-color: #D8CCA2;
     border-bottom-style: solid;
@@ -70,11 +72,11 @@ aside {
 }
 
 footer {
-    grid-column: span 3;
+    _grid-column: span 3;
     padding: 30px;
     text-align: center;
     font-size: 1.4em;
-    background-color: #690;
+    background-color: #1b1c1d;
     color: white;
 }
 
