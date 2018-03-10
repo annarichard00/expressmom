@@ -44,7 +44,7 @@
     border-radius: 5px;
 }
 
-.xm-content.about .ui.image img {
+.xm-content.about .ui.image img, .ui.image.xm-img.home img {
     border-radius: 5px;
 }
 
@@ -54,6 +54,11 @@
     border-color: #D8CCA2;
     border-width: 5px;
     border-radius: 10px;
+    box-shadow: 10px 10px 5px #944046;
+}
+
+.ui.image.xm-img.home img {
+    _border-radius: 5px;
 }
 
 @media (min-width: 768px) {
@@ -116,4 +121,23 @@ h1 {
     margin-bottom: 1em;
     font-size: 1.3em;
     font-weight: bold;
+}
+
+p.disclaimer {
+    font-family: 'Fira Sans';
+    font-weight: 100;
+    font-size: 75%;
+    margin-top: 1em;
+}
+
+div.xm-services button.ui.button {
+  background-color: #AB4F75;
+  margin: 0 auto;
+  color: #f2f0d2;
+  font-family: 'Fira Sans';
+  font-weight: 100;
+}
+
+div.xm-services {
+    margin: 0 auto 1em;
 }
