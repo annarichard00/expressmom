@@ -20,12 +20,15 @@
     color: #673135;
     _width: 100%;
     box-shadow: 10px 10px 5px #944046;
-    /* font-size: 14px; */
 }
 
 .xm-content h3.ui.header {
     font-family: 'Fira Sans', Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
     font-weight: 300;
+}
+
+.xm-content.about {
+    grid-column: 1 / -1;
 }
 
 .xm-content.about .ui.divider {
@@ -62,25 +65,38 @@
     _border-radius: 5px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1023px) {
     .xm-container {
         display: grid;
-        grid-template-columns: 200px 1fr 200px;
-        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 70px auto;
     }
 
-    nav > div {
-        display: flex;
-        flex-direction: column;
-    }
+
+header {
+    grid-column: 1;
+   }
+nav {
+    grid-column: 2;
+    border-bottom: none !important;;
+
+   }
+nav > .secondary.pointing.menu {
+    float: right;
+    margin-top: 1em;
+}
+footer {
+    grid-column: 1 / -1;
+    height: 325px;
+
+   }
 }
 
 header {
-    grid-column: span 3;
     padding: .25em;
     text-align: center;
     font-size: 1.4em;
-    background: #f2f0d2;
+    background-color: #f2f0d2;
     /* color: #AB4F75; */
     padding-bottom: 0;
 }
@@ -98,8 +114,8 @@ nav {
     border-bottom-style: solid;
 }
 
-nav > .ui.secondary.pointing.menu a.item,
-nav > .ui.secondary.pointing.menu a.active.item {
+nav > .ui.secondary.pointing.menu .item,
+nav > .ui.secondary.pointing.menu .active.item {
     color: #ab4f75;
     font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
@@ -114,7 +130,6 @@ aside {
 }
 
 footer {
-    _grid-column: span 3;
     padding: 30px;
     text-align: center;
     font-size: 1.4em;
