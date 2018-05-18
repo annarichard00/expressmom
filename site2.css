@@ -20,6 +20,7 @@
     color: #673135;
     _width: 100%;
     box-shadow: 10px 10px 5px #944046;
+    /* font-size: 14px; */
 }
 
 .xm-content h3.ui.header {
@@ -97,10 +98,14 @@ nav {
     border-bottom-style: solid;
 }
 
-nav > .ui.secondary.pointing.menu .item,
-nav > .ui.secondary.pointing.menu .active.item {
+nav > .ui.secondary.pointing.menu a.item,
+nav > .ui.secondary.pointing.menu a.active.item {
     color: #ab4f75;
     font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+nav > .ui.secondary.pointing.menu .active.item {
+    border-color: #673235;
 }
 
 aside {
@@ -140,4 +145,41 @@ div.xm-services button.ui.button {
 
 div.xm-services {
     margin: 0 auto 1em;
+}
+
+.ui.link.cards.xm-downloads > .card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+.ui.link.cards.xm-downloads > .card:first-child {
+    margin-top: 2em;
+}
+
+h2{
+    font-size: 2em;
+    text-shadow: 2px 2px 4px #863a3f;
+    color: #f2f0d2;
+    text-align: center;
+    font-weight: 500;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    margin-bottom: 0em;
+}
+
+.ui.card>.content, .ui.cards>.card>.content{
+    background-color: #F2EFD2;
+    color:#673135;
+}
+
+.ui.card>.extra, .ui.cards>.card>.extra{
+    background-color: #D8CCA2;
+}
+
+.ui.card>.content>.header, .ui.cards>.card>.content>.header{
+    color: #ab4f75;
+}
+
+.ui.card>.content>.header+.description, .ui.card>.content>.meta+.description, .ui.cards>.card>.content>.header+.description, .ui.cards>.card>.content>.meta+.description{
+    color: #ab4f75;
 }
